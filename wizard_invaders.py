@@ -14,7 +14,7 @@ class WizardGame(arcade.Window):
         self.current_state = "START"
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
         arcade.set_background_color((48, 10, 56))
-        self.background_music = arcade.load_sound("sounds/hold_the_line.wav")
+        self.background_music = arcade.load_sound("sounds/hold_the_line.mp3")
         self.music_player = self.background_music.play(volume = 0.5, loop = True)
         self.sound_wizard_shoot = arcade.load_sound("sounds/wizard_pew.wav")
         self.sound_enemy_shoot = arcade.load_sound("sounds/enemy_pew.wav")
